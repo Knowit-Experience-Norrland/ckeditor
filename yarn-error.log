@@ -1,0 +1,111 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js publish
+
+PATH: 
+  C:\Users\albfri2\.oh-my-posh;C:\Program Files\PowerShell\7;C:\Users\albfri2\.oh-my-posh;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.2.1.0_x64__8wekyb3d8bbwe;C:\Program Files\Microsoft MPI\Bin\;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\Users\albfri2\ctags;C:\Program Files (x86)\Vim\vim82;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Users\albfri2\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Go\bin;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\dotnet\;C:\Users\albfri2\.cargo\bin;C:\Users\albfri2\scoop\apps\gcc\current\bin;C:\Users\albfri2\scoop\shims;C:\Users\albfri2\AppData\Local\Microsoft\WindowsApps;C:\Users\albfri2\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\albfri2\spicetify-cli;C:\Users\albfri2\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\albfri2\.dotnet\tools;C:\Users\albfri2\AppData\Roaming\npm;C:\Users\albfri2\AppData\Local\Microsoft\WindowsApps;C:\Users\albfri2\go\bin;C:\Users\albfri2\AppData\Local\gitkraken\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.13.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137009:13)
+      at Interface.emit (node:events:390:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:390:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:390:28)
+      at addChunk (node:internal/streams/readable:315:12)
+
+npm manifest: 
+  {
+    "name": "digg-ckeditor",
+    "version": "32.0.0",
+    "description": "Diggs custom editor build of classicCKEditor 5",
+    "keywords": [
+      "ckeditor5-build",
+      "ckeditor",
+      "ckeditor5",
+      "ckeditor 5",
+      "wysiwyg",
+      "rich text",
+      "editor",
+      "html",
+      "contentEditable",
+      "editing",
+      "operational transformation",
+      "ot",
+      "collaboration",
+      "collaborative",
+      "real-time",
+      "framework"
+    ],
+    "main": "./build/ckeditor.js",
+    "files": [
+      "build",
+      "ckeditor5-metadata.json"
+    ],
+    "dependencies": {
+      "@ckeditor/ckeditor5-adapter-ckfinder": "^32.0.0",
+      "@ckeditor/ckeditor5-autoformat": "^32.0.0",
+      "@ckeditor/ckeditor5-basic-styles": "^32.0.0",
+      "@ckeditor/ckeditor5-block-quote": "^32.0.0",
+      "@ckeditor/ckeditor5-ckfinder": "^32.0.0",
+      "@ckeditor/ckeditor5-cloud-services": "^32.0.0",
+      "@ckeditor/ckeditor5-code-block": "^32.0.0",
+      "@ckeditor/ckeditor5-easy-image": "^32.0.0",
+      "@ckeditor/ckeditor5-editor-classic": "^32.0.0",
+      "@ckeditor/ckeditor5-essentials": "^32.0.0",
+      "@ckeditor/ckeditor5-heading": "^32.0.0",
+      "@ckeditor/ckeditor5-image": "^32.0.0",
+      "@ckeditor/ckeditor5-indent": "^32.0.0",
+      "@ckeditor/ckeditor5-language": "^32.0.0",
+      "@ckeditor/ckeditor5-link": "^32.0.0",
+      "@ckeditor/ckeditor5-list": "^32.0.0",
+      "@ckeditor/ckeditor5-markdown-gfm": "^32.0.0",
+      "@ckeditor/ckeditor5-media-embed": "^32.0.0",
+      "@ckeditor/ckeditor5-paragraph": "^32.0.0",
+      "@ckeditor/ckeditor5-paste-from-office": "^32.0.0",
+      "@ckeditor/ckeditor5-source-editing": "^32.0.0",
+      "@ckeditor/ckeditor5-table": "^32.0.0",
+      "@ckeditor/ckeditor5-typing": "^32.0.0"
+    },
+    "devDependencies": {
+      "@ckeditor/ckeditor5-core": "^32.0.0",
+      "@ckeditor/ckeditor5-dev-utils": "^28.0.1",
+      "@ckeditor/ckeditor5-dev-webpack-plugin": "^28.0.1",
+      "@ckeditor/ckeditor5-theme-lark": "^32.0.0",
+      "css-loader": "^5.2.7",
+      "postcss-loader": "^4.3.0",
+      "raw-loader": "^4.0.1",
+      "style-loader": "^2.0.0",
+      "terser-webpack-plugin": "^4.2.3",
+      "webpack": "^5.58.1",
+      "webpack-cli": "^4.9.0"
+    },
+    "engines": {
+      "node": ">=14.0.0",
+      "npm": ">=5.7.1"
+    },
+    "author": "Kex-norr",
+    "license": "GPL-2.0-or-later",
+    "scripts": {
+      "build": "webpack --mode production",
+      "preversion": "npm run build"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

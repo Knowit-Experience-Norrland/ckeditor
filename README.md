@@ -20,8 +20,14 @@ See:
 First, install the build from npm:
 
 ```bash
-npm install --save @ckeditor/ckeditor5-build-classic
+npm install --save @kexnorr/ckeditor
 ```
+or 
+
+```bash
+yarn add @kexnorr/ckeditor
+```
+
 
 And use it in your website:
 
@@ -31,7 +37,7 @@ And use it in your website:
 </div>
 <script src="./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
 <script>
-	DiggEditor
+	KnowitEditor
 		.create( document.querySelector( '#editor' ) )
 		.then( editor => {
 			window.editor = editor;
@@ -45,12 +51,12 @@ And use it in your website:
 Or in your JavaScript application:
 
 ```js
-import DiggEditor from '@ckeditor/ckeditor5-build-classic';
+import KnowitEditor from '@ckeditor/ckeditor5-build-classic';
 
 // Or using the CommonJS version:
 // const ClassicEditor = require( '@ckeditor/ckeditor5-build-classic' );
 
-DiggEditor
+KnowitEditor
 	.create( document.querySelector( '#editor' ) )
 	.then( editor => {
 		window.editor = editor;

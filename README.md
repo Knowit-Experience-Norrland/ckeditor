@@ -1,4 +1,4 @@
-Digg-ckeditor
+Knowit-ckeditor
 ========================================
 
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
@@ -51,7 +51,7 @@ And use it in your website:
 Or in your JavaScript application:
 
 ```js
-import KnowitEditor from '@ckeditor/ckeditor5-build-classic';
+import KnowitEditor from '@ckeditor/ckeditor';
 
 // Or using the CommonJS version:
 // const ClassicEditor = require( '@ckeditor/ckeditor5-build-classic' );

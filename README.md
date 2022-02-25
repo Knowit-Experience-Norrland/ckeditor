@@ -51,7 +51,7 @@ And use it in your website:
 Or in your JavaScript application:
 
 ```js
-import KnowitEditor from '@ckeditor/ckeditor5-build-classic';
+import KnowitEditor from '@ckeditor/ckeditor';
 
 // Or using the CommonJS version:
 // const ClassicEditor = require( '@ckeditor/ckeditor5-build-classic' );

@@ -40,17 +40,11 @@ export default class UnderlineEditing extends Plugin {
 			copyOnEnter: true
 		});
 
-		// Build converter from model to view for data and editing pipelines.
+		//Build converter from model to view for data and editing pipelines.
 		editor.conversion.attributeToElement({
 			model: UNDERLINE,
 			view: 'u',
-			upcastAlso: {
-				styles: {
-					'text-decoration': 'underline'
-				}
-			}
 		});
-
 
 		// Create bold command.
 		editor.commands.add(UNDERLINE, new AttributeCommand(editor, UNDERLINE));

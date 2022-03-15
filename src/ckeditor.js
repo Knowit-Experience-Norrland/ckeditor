@@ -140,5 +140,24 @@ KnowitEditor.defaultConfig = {
 			{ model: 'heading3', view: 'h3', title: 'Rubrik 3', class: 'ck-heading_heading3' },
 			{ model: 'heading4', view: 'h4', title: 'Rubrik 4', class: 'ck-heading_heading4' },
 		]
+	},
+	codeBlock: {
+		languages: [
+			{ language: 'plaintext', label: 'Plain text' }, // The default language.
+			{ language: 'c', label: 'C' },
+			{ language: 'cs', label: 'C#' },
+			{ language: 'cpp', label: 'C++' },
+			{ language: 'css', label: 'CSS' },
+			{ language: 'diff', label: 'Diff' },
+			{ language: 'html', label: 'HTML' },
+			{ language: 'java', label: 'Java' },
+			{ language: 'javascript', label: 'JavaScript' },
+			{ language: 'json', label: 'JSON' },
+			{ language: 'php', label: 'PHP' },
+			{ language: 'python', label: 'Python' },
+			{ language: 'ruby', label: 'Ruby' },
+			{ language: 'typescript', label: 'TypeScript' },
+			{ language: 'xml', label: 'XML' }
+		]
 	}
 };

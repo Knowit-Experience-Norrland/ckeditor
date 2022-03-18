@@ -11,7 +11,8 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-// import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -31,15 +32,9 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
-
-import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import TextPartLanguage from '@ckeditor/ckeditor5-language/src/textpartlanguage';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
-
-import MarkdownUnderline from './customPlugins/markdownUnderline'
-import MarkdownHighlight from './customPlugins/markdownHighlight'
-import MarkdownLanguageMarker from './customPlugins/markdownLanguageMarker'
 
 export default class KnowitEditor extends ClassicEditorBase { }
 
@@ -47,6 +42,8 @@ export default class KnowitEditor extends ClassicEditorBase { }
 KnowitEditor.builtinPlugins = [
 	Essentials,
 	UploadAdapter,
+	Underline,
+	Highlight,
 	Autoformat,
 	Bold,
 	Italic,
@@ -68,29 +65,25 @@ KnowitEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Markdown,
 	TextTransformation,
 	CodeBlock,
 	TextPartLanguage,
 	SourceEditing,
-	MarkdownUnderline,
-	MarkdownHighlight,
-	MarkdownLanguageMarker
 ];
 
 // Editor configuration.
 KnowitEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'markdownLanguageMarker',
+			'textPartLanguage',
 			'|',
 			'heading',
 			'|',
 			'bold',
 			'italic',
-			'markdownUnderline',
+			'underline',
 			'|',
-			'markdownHighlight',
+			'highlight',
 			'link',
 			'numberedList',
 			'bulletedList',

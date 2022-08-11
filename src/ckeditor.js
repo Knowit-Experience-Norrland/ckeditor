@@ -9,7 +9,6 @@ import ClassicEditorBase from "@ckeditor/ckeditor5-editor-classic/src/classicedi
 import Essentials from "@ckeditor/ckeditor5-essentials/src/essentials";
 import UploadAdapter from "@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter";
 import Autoformat from "@ckeditor/ckeditor5-autoformat/src/autoformat";
-import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
 import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
 import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline";
 import Highlight from "@ckeditor/ckeditor5-highlight/src/highlight";
@@ -35,7 +34,7 @@ import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices"
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock";
 import TextPartLanguage from "@ckeditor/ckeditor5-language/src/textpartlanguage";
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
-import { InfoBlock } from "./customPlugins";
+import { InfoBlock, Bold } from "./customPlugins";
 
 export default class KnowitEditor extends ClassicEditorBase {}
 

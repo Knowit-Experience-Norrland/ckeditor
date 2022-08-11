@@ -34,7 +34,7 @@ import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices"
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock";
 import TextPartLanguage from "@ckeditor/ckeditor5-language/src/textpartlanguage";
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
-import { InfoBlock, Bold } from "./customPlugins";
+import { InfoBlock, Bold, Strong } from "./customPlugins";
 
 export default class KnowitEditor extends ClassicEditorBase {}
 
@@ -46,6 +46,7 @@ KnowitEditor.builtinPlugins = [
   Highlight,
   Autoformat,
   Bold,
+  Strong,
   Italic,
   BlockQuote,
   CKFinder,
@@ -81,6 +82,7 @@ KnowitEditor.defaultConfig = {
       "heading",
       "|",
       "bold",
+      "strong",
       "italic",
       "underline",
       "|",

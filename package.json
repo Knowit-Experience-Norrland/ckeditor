@@ -1,6 +1,6 @@
 {
     "name": "@kexnorr/ckeditor",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Knowit custom editor build of classicCKEditor 5",
     "keywords": [
         "ckeditor5-build",

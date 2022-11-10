@@ -29,6 +29,7 @@ import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice";
 import Table from "@ckeditor/ckeditor5-table/src/table";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
+import TableCaption from "@ckeditor/ckeditor5-table/src/tablecaption";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
 import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices";
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock";
@@ -66,6 +67,7 @@ KnowitEditor.builtinPlugins = [
   PasteFromOffice,
   Table,
   TableToolbar,
+  TableCaption,
   TextTransformation,
   CodeBlock,
   TextPartLanguage,
@@ -116,7 +118,12 @@ KnowitEditor.defaultConfig = {
     ],
   },
   table: {
-    contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
+    contentToolbar: [
+      "tableColumn",
+      "tableRow",
+      "mergeTableCells",
+      "toggleTableCaption",
+    ],
   },
   language: {
     textPartLanguage: [{ title: "Engelska", languageCode: "en" }],

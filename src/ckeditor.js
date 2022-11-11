@@ -30,6 +30,7 @@ import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from "@ckeditor/ckeditor5-table/src/table";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
 import TableCaption from "@ckeditor/ckeditor5-table/src/tablecaption";
+import PlainTableOutput from "@ckeditor/ckeditor5-table/src/plaintableoutput";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
 import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices";
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock";
@@ -68,6 +69,7 @@ KnowitEditor.builtinPlugins = [
   Table,
   TableToolbar,
   TableCaption,
+  PlainTableOutput,
   TextTransformation,
   CodeBlock,
   TextPartLanguage,

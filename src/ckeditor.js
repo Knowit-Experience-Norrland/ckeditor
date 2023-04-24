@@ -36,7 +36,7 @@ import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices"
 import CodeBlock from "@ckeditor/ckeditor5-code-block/src/codeblock";
 import TextPartLanguage from "@ckeditor/ckeditor5-language/src/textpartlanguage";
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
-import { InfoBlock, Bold, Strong } from "./customPlugins";
+import { InfoBlock, Bold, Border, Strong } from "./customPlugins";
 
 export default class KnowitEditor extends ClassicEditorBase {}
 
@@ -75,6 +75,7 @@ KnowitEditor.builtinPlugins = [
   TextPartLanguage,
   SourceEditing,
   InfoBlock,
+  Border,
 ];
 
 // Editor configuration.
@@ -101,6 +102,7 @@ KnowitEditor.defaultConfig = {
       "uploadImage",
       "InfoBlock",
       "blockQuote",
+      "border",
       "insertTable",
       "mediaEmbed",
       "undo",
@@ -136,27 +138,27 @@ KnowitEditor.defaultConfig = {
     options: [
       { model: "paragraph", title: "Paragraph", class: "ck-heading_paragraph" },
       {
-        model: "heading1",
+        model: "heading2",
         view: "h2",
-        title: "Rubrik 1",
+        title: "Rubrik 2",
         class: "ck-heading_heading1",
       },
       {
-        model: "heading2",
+        model: "heading3",
         view: "h3",
-        title: "Rubrik 2",
+        title: "Rubrik 3",
         class: "ck-heading_heading2",
       },
       {
-        model: "heading3",
+        model: "heading4",
         view: "h4",
-        title: "Rubrik 3",
+        title: "Rubrik 4",
         class: "ck-heading_heading3",
       },
       {
-        model: "heading4",
+        model: "heading5",
         view: "h5",
-        title: "Rubrik 4",
+        title: "Rubrik 5",
         class: "ck-heading_heading4",
       },
     ],
